@@ -57,13 +57,31 @@ git checkout -b experiment/git-merge
 
 ## 10. Закомитить
 
-## 11. Добавить новую строчку в конец файла // контент произвольный
+```
+git add README.md
+git commit -m "change first string"
+```
 
+## 11. Добавить новую строчку в конец файла // контент произвольный
+ 
 ## 12. Закоммитить
+
+```
+git add README.md
+git commit -m "add new string at the end"
+```
 
 ## 13. Запушить
 
+```
+git push origin experiment/git-merge
+```
+
 ## 14. Переключиться на ветку develop
+
+```
+git checkout develop
+```
 
 ## 15. Изменить первую строчку README.md
 
