@@ -89,11 +89,27 @@ git checkout develop
 
 ## 17. Закоммитить и запушить
 
+```
+git add README.md
+git commit -m "change readme"
+git push origin develop
+```
+
 ## 18. Сделать Pull Request(Merge Request) из ветки experiment/git-merge в develop
 
 ## 19. Локально смержить ветку develop в experiment/git-merge и разрешить конфликты
 
+```
+git merge experiment/git-merge
+git add README.md
+```
+
 ## 20. Закоммитить и запушить
+
+```
+git merge --continue
+git push origin develop
+```
 
 ## 21. Убедиться, что нет конфликтов
 
