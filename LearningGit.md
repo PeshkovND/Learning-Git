@@ -125,15 +125,48 @@ git checkout -b 'experiment/git-rebase'
 
 ## 2. Сделать 3 коммита // произвольные изменения
 
+```
+git add LearningGit.md
+git commit -m "add Rebase layout to LearningGit.md"
+git add README.md
+git commit -m "add ! to hello"
+git add README.md
+git commit -m "add ! to Learning Git"
+```
 ## 3. Закоммитить и запушить
 
+```
+git push origin experiment/git-rebase
+```
 ## 4. Использую команду rebase в интерактивном режиме объединить 3 последних коммита в один
 
+```
+git rebase -i HEAD~3
+```
+
+В текстовом редакторе:
+
+```
+pick 714b535 add Rebase layout to LearningGit.md
+squash 54f7fa1 add ! to hello
+squash c6f8355 add ! to Learning Git
+
+rebase 3 commits
+```
+
 ## 5. Запушить
+
+```
+git push origin experiment/git-rebase
+```
 
 ## 6. Должна возникнуть ошибка, что локальная и удаленная история git отличаются
  
 ## 7. Сделать force push для ветку experiment/git-rebase
+
+```
+git push -f origin experiment/git-rebase
+```
 
 ## 8. Сделать еще один коммит
 
