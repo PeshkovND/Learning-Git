@@ -336,13 +336,35 @@ git remote -v
 
 ## 4. Сделать новый коммит
 
+```
+git add LearningGit.md
+git commit -m "full Rebase and Tagging in LearningGit.md"
+```
+
 ## 5. Попытаться запушить
+
+```
+git push origin develop
+```
 
 ## 6. Добавить ссылку на ремоут используя протокол ssh
 
+```
+git remote add origin git@github.com:PeshkovND/Learning-Git.git
+```
+
 ## 7. Запушить изменения
 
+```
+git push origin develop
+```
+
 ## 8. Настроить вызов кастомного редактора в гит конфиге 
+
+```
+[core]
+    editor = 'C:/Users/peshk/AppData/Local/Programs/Microsoft VS Code/Code.exe'
+```
 
 ## 9. Убедиться, что вызывается установленный редактор
 
@@ -350,6 +372,7 @@ git remote -v
 
     2. Сделать коммит используя git commit. Должен появиться редактор для добавления сообщения коммита
 
-## 10. *Установить приложение SourceTree [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/), поиграться с интерфейсом для выполнения разных операций, которые были использованы выше
-
-## 11. *Установить приложение gitup: [https://gitup.co/](https://gitup.co/) поиграться с интерфейсом для выполнения разных операций, которые были использованы выше
+```
+git add .
+git commit
+```
